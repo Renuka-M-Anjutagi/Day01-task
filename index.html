@@ -3,16 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>From Creation</title>
+    <style>
+        .fname{
+            color: #d2691e;
+           padding: 20px;
+           width: 30%;
+        }
+        #textname{
+            padding-bottom: 20px;
+            margin: 10px;
+        }
+        .mname{
+            color: antiquewhite;
+            padding: 20px;
+        }
+        .lname{
+
+            color:antiquewhite;
+            padding: 20px;
+
+        }
+        .email{
+            color: aqua;
+            padding: 20px;
+        }
+        .pass{
+
+            color:bisque;
+            padding: 20px;
+        }
+
+    </style>
 </head>
 <body>
-    <form>
-            <label> Enter Email to login</label><br>
-        <input type="email" name="email" id="email" /><br>
-        <label>Enter password</label><br>
-        <input type="password" name="password" id="password" /><br>
+    <form method="get">
 
-        <input type="submit" name="Login" />
+        <label class="fname" for="name"> Firstname  </label>
+
+        <input type="text" name="name" id="textname"> <br>
+
+        <label class="mname" for="middlename"> Middlename  </label>
+
+        <input type="text" name="middlename" id="textname"> <br>
+
+        <label class="lname" for="lastname"> Lastname  </label>
+
+        <input type="text" name="lastname" id="textname"> <br>
+
+
+        <label class="email" for="email"> Email  </label>
+
+        <input type="email" name="email" id="textname"> <br>
+
+        <label class="pass" for="password"> Password  </label>
+
+        <input type="password" name="password" id="textname"><br>       
+        
+        <label> Uploading File</label>
+        <input type="file" name="file"id="textname"><br>
+
+        <input type="submit" value="Submit" >
     </form>
 </body>
 </html>
